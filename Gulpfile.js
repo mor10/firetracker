@@ -54,7 +54,7 @@ gulp.task('css', function() {
 // Watch everything
 gulp.task('watch', function() {
     gulp.watch(source + '**/*.html', ['html']);
-    gulp.watch(source + 'JS/**/*.js', ['javascript']);
+    gulp.watch(source + '**/*.js', ['javascript']);
     gulp.watch(source + '**/*.css', ['css']);
     gulp.watch(source + 'images/**/*.{jpg,JPG}', ['imageoptim']);
 });
