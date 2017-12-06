@@ -9,7 +9,7 @@ var gulp = require('gulp'),
     cssnano = require('cssnano'),
 
     source = 'development/',
-    dest = 'docs/';
+    dest = 'production/';
 
 // Optimize images through gulp-image
 gulp.task('imageoptim', function() {
