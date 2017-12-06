@@ -1,7 +1,7 @@
 {
-  "name": "firewatch",
+  "name": "firetracker",
   "version": "0.0.1",
-  "description": "Core project for Firewatch site.",
+  "description": "Core project for Community Fire Tracker site.",
   "main": "production/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
