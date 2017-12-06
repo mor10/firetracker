@@ -1,0 +1,65 @@
+@import 'variables';
+/*--------------------------------------------------------------
+Header styles
+--------------------------------------------------------------*/
+
+.masthead {
+    padding: 1em;
+    background-color: $navy;
+}
+
+@media screen and (min-width: 600px) {
+    .masthead {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+
+.site-title {
+    font-size: 1.4em;
+}
+
+.site-title a {
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+Mobile-first menu
+--------------------------------------------------------------*/
+
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@media screen and (min-width: 600px) {
+    .main-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.main-nav a {
+    display: block;
+    padding: .6em 1em;
+    color: white;
+    border-left: 1px solid white;
+}
+
+.main-nav a:focus,
+.main-nav a:hover {
+    background: white;
+    color: $navy;
+}
+
+@media screen and (min-width: 600px) {
+    .main-nav a {
+        border-left: none;
+    }
+}

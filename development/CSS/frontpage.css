@@ -1,0 +1,197 @@
+@import 'variables';
+/*--------------------------------------------------------------
+Front page promo area
+--------------------------------------------------------------*/
+
+.promo-text {
+    box-sizing: border-box;
+
+}
+
+.promo-title {
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 0 .5em;
+    font-size: 2em;
+    background: hsla(0, 0%, 100%, .75);
+}
+
+.promo-lede {
+    padding: 1em 1em;
+    font-size: 1.4em;
+    color: $beige;
+    text-shadow: 1px 1px 3px hsla(277, 47%, 40%, .85);
+    background: hsla(277, 47%, 66%, .85);
+
+}
+
+@media screen and (min-width: 600px) {
+    .promo-area {
+        position: relative;
+        max-height: 20em;
+        overflow: hidden;
+    }
+
+    .promo-content {
+        position: absolute;
+        -js-display: flex;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .promo-text {
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 0 12.5%;
+        max-width: 52em;
+    }
+
+    .promo-lede {
+        margin-top: -.5em;
+        margin-left: 20%;
+        text-align: right;
+        width: 70%;
+    }
+}
+
+/*--------------------------------------------------------------
+Front page styles
+--------------------------------------------------------------*/
+
+.main-pitch {
+    background: white;
+}
+
+.main-title {
+    font-size: 2.2em;
+    text-align: center;
+}
+
+.teaser {
+    padding: 0 1em;
+    font-size: 1.2em;
+}
+
+/* Three Reasons */
+
+.three-reasons {
+    margin: 2em -1em;
+    padding: 0;
+    background: white;
+}
+
+.reason {
+    margin-bottom: 1em;
+    padding-bottom: 2em;
+}
+
+.reason figcaption {
+    padding: 0 3em;
+}
+
+@media screen and (min-width: 50em) {
+    .three-reasons {
+        -js-display: flex;
+        display: flex;
+        margin: 1em auto 0;
+    }
+
+    .reason {
+        width: 33.33333333%;
+    }
+
+    .reason figcaption {
+        padding: 0 1.5em;
+    }
+}
+
+@media screen and (min-width: 70em) {
+    .three-reasons {
+        padding: 2em 0 0;
+    }
+
+}
+
+.content-title {
+    margin-bottom: 0;
+    font-size: 1.4em;
+}
+
+.reason p {
+    margin: .5em 0 1.8em;
+}
+
+
+/* Experience */
+.pitch::before {
+    display: block;
+    height: 4em;
+    content: "";
+    background: $navy url('/images/square_bg.svg') repeat;
+}
+
+/* Feature */
+
+.features {
+    margin: 2em -1em;
+}
+
+.feature {
+    background: white;
+}
+.feature figcaption {
+    padding: 0 2em 3em;
+}
+
+@media screen and (min-width: 50em) {
+    .features {
+        -js-display: flex;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3em auto 2em;
+        padding: 0;
+    }
+
+    .feature {
+        width: 50%;
+    }
+
+    .feature figcaption {
+        padding: 0 1.5em 3em;
+    }
+}
+
+/* CTA */
+
+.cta {
+    padding: 3em;
+    background: $red;
+    text-align: center;
+}
+
+.cta a {
+    padding: 0 .5em;
+    font-size: 2em;
+    font-weight: 900;
+    color: $beige;
+    text-decoration: none;
+    border: 5px solid $beige;
+}
+
+@media screen and (min-width: 40em) {
+    .cta a {
+        font-size: 3em;
+        border-width: 10px;
+    }
+}
+
+.cta a:focus,
+.cta a:hover {
+    background: $beige;
+    color: $red;
+}
