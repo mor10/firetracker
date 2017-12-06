@@ -1,0 +1,12 @@
+.main-area {
+    margin: 0 auto;
+    max-width: 60em;
+    padding: 1em;
+    
+}
+
+.alert {
+    /* margin: 1em; */
+    padding: 0 1.5em;
+    border: 3px solid red;
+}
