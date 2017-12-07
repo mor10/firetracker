@@ -16,14 +16,12 @@ function buildCards(json) {
 		item.innerHTML = string;
 		MAIN.appendChild( item );
 	}
-	
 }
-
 
 // Parse CSV data into JSON
 // Source: https://gist.github.com/iwek/7154578
 function csvJSON(csv){    
-	var lines=csv.split("\r");
+	var lines=csv.split(/\r\n|\n|\r/);
 	
 	var result = [];
 	var headers=lines[0].split(",");
