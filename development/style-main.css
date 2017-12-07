@@ -241,6 +241,12 @@ Mobile-first menu
     font-size: 1.3em;
 }
 
+.description {
+    padding-bottom: .6em;
+    border-bottom: 1px solid rgb(217, 217, 217);
+    margin-bottom: .6em;
+}
+
 /*--------------------------------------------------------------
 Footer styles
 --------------------------------------------------------------*/
