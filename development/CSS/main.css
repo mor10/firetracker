@@ -10,3 +10,40 @@
     padding: 0 1.5em;
     border: 3px solid red;
 }
+
+.resource-list ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.resource-list li {
+    margin-bottom: 1em;
+}
+
+.resource-list a {
+    display: block;
+    padding: 1em;
+    border: 3px dashed grey;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    transition: border 1s;
+}
+
+.resource-list a:hover,
+.resource-list a:focus {
+    border: 3px solid black;
+}
+
+.resource-list a:hover > .name,
+.resource-list a:focus > .name {
+    text-decoration: underline;
+}
+
+.name {
+    margin-top: 0;
+    margin-bottom: .2em;
+    font-size: 1.3em;
+}
+
