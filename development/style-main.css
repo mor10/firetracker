@@ -33,20 +33,6 @@ Accessibility
 	z-index: 100000; /* Above WP toolbar */
 }
 
-/*--------------------------------------------------------------
-Layouts
---------------------------------------------------------------*/
-
-.centered {
-    margin: 0 auto;
-    padding: 0 1em;
-}
-
-@media screen and (min-width: 62em) {
-    .centered {
-        max-width: 62em;
-    }
-}
 
 /*--------------------------------------------------------------
 Typography
@@ -101,7 +87,7 @@ Header styles
 
 .masthead {
     padding: 1em;
-    background-color: $navy;
+    background-color: hsl(0, 0%, 95%);
 }
 
 @media screen and (min-width: 600px) {
@@ -112,17 +98,56 @@ Header styles
     }
 }
 
+.site-branding {
+    max-width: 40em;
+    margin: 0 auto;
+}
+
 .site-title {
-    font-size: 1.4em;
+    font-size: 2em;
+    text-align: center;
 }
 
 .site-title a {
     font-weight: 400;
     text-align: center;
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
+.filter {
+    max-width: 40em;
+    margin: 0 auto 1em;
+}
+
+.filter-heading {
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+.radio-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.radio-list label {
+    margin: 0 .4em .4em 0;
+    padding: .6em .8em .6em;
+    background: white;
+    border: 1px solid rgb(183, 183, 183);
+    border-radius: 5px;
+    display: flex;
+    align-items: baseline;
+}
+
+.radio-list label:hover,
+.radio-list label:focus {
+    background: rgb(37, 37, 37);
+    color: white;
+}
+.radio-list input {
+    margin-right: .6em;
+}
 /*--------------------------------------------------------------
 Mobile-first menu
 --------------------------------------------------------------*/
@@ -161,7 +186,7 @@ Mobile-first menu
 
 .main-area {
     margin: 0 auto;
-    max-width: 60em;
+    max-width: 40em;
     padding: 1em;
     
 }
@@ -226,26 +251,33 @@ Footer styles
     color: $beige;
 }
 
-.widget-title {
-    /* font-size: 1.3em; */
+.widget {
+    max-width: 40em;
+    margin: 0 auto;
 }
 
-.footer-nav {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+hr {
+    margin: 2em 0;
+    text-align: left;
 }
 
-.footer-nav a {
-    display: block;
-    padding: .6em 1em;
+.widget h3 {
+    margin-bottom: 0;
+    font-size: 1.4em;
+    font-weight: normal;
+}
+
+.widget p {
+    margin-bottom: 1em;
+}
+.widget a {
     color: white;
 }
 
-.footer-nav a:focus,
-.footer-nav a:hover {
-    background: white;
-    color: hsl(0, 0%, 10%);
+.footer a:hover,
+.footer a:focus,
+.footer a:visited {
+    color: white;
 }
 
 

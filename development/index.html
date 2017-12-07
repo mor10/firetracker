@@ -17,56 +17,56 @@
 	<header class="masthead clear">
 		<div class="site-branding">
 			<h1 class="site-title"><a href="/">Community Fire Tracker</a></h1>
-		</div><!-- .site-title -->
-		<nav class="filter location">
+			<div class="intro">
+					<p>If you are experiencing an emergency, please dial 911 for immediate assistance.</p>
+					<p>This site provides relevant fire-related resources to members of the affected communities. It is not an official resource or channel of communication. Links to official sources are noted as “Official Government Site” or “Official Twitter Account.” All other links should be considered <strong>UNOFFICIAL</strong>.</p>
+					<p>To submit new relevant links to the Community Fire Tracker <a href="https://goo.gl/forms/CIxngYMaX6U31Xpq1">please use this form</a>.</p>
+					
+			</div>
+		</div><!-- .site-branding -->
+		<nav class="filter">
 			<h2 class="filter-heading">Filter by fire:</h2>
 			
-			<section>
-				<input type="radio" id="all" name="location" value="all" checked>
-					<label for="all">All fires</label>
-				<input type="radio" id="thomas" name="location" value="thomas" />
-					<label for="thomas">Thomas Fire (Ventura)</label>
-				<input type="radio" id="creek" name="location" value="creek" />
-					<label for="creek">Creek Fire (Los Angeles)</label>
-				<input type="radio" id="rye" name="location" value="rye" />
-					<label for="rye">Rye Fire (Los Angeles)</label>
-				<input type="radio" id="little" name="location" value="littlemountain" />
-					<label for="little">Little Mountain Fire (San Bernardino)</label>
-				<input type="radio" id="skirball" name="location" value="skirball" />
-					<label for="skirball">Skirball Fire (Los Angeles)</label>
+			<section class="radio-list location">
+				<label>
+					<input type="radio" id="all" name="location" value="all" checked>
+					All fires
+				</label>
+				<label>
+					<input type="radio" id="thomas" name="location" value="thomas" />
+					Thomas Fire (Ventura)
+				</label>
+				<label>
+					<input type="radio" id="creek" name="location" value="creek" />
+					Creek Fire (Los Angeles)
+				</label>
+				<label>
+					<input type="radio" id="rye" name="location" value="rye" />
+					Rye Fire (Los Angeles)
+				</label>
+				<label>
+					<input type="radio" id="little" name="location" value="littlemountain" />
+					Little Mountain Fire (San Bernardino)
+				</label>
+				<label>
+					<input type="radio" id="skirball" name="location" value="skirball" />
+					Skirball Fire (Los Angeles)
+				</label>
 			</section>
 			
 		</nav>
-		<!-- <nav class="filter">
-			<h2 class="filter-heading">Filter by information type:</h2>
-			<input type="radio" id="alltypes" name="alltypes" value="alltypes">
-			<label for="alltypes">All</label>
-			<input type="radio" id="map" name="map" value="map">
-			<label for="map">Map</label>
-			<input type="radio" id="news" name="news" value="news">
-			<label for="news">News Stories</label>
-			<input type="radio" id="government" name="government" value="government">
-			<label for="government">Official Government Site</label>
-			<input type="radio" id="traffic" name="traffic" value="traffic">
-			<label for="traffic">Traffic and Transportation</label>
-			<input type="radio" id="webcams" name="webcams" value="webcams">
-			<label for="webcams">Webcams</label>
-			<input type="radio" id="twitter" name="twitter" value="twitter">
-			<label for="twitter">Twitter Feeds</label>
-			<input type="radio" id="mobile" name="mobile" value="mobile">
-			<label for="mobile">Mobile App</label>
-			<input type="radio" id="volunteer" name="volunteer" value="volunteer">
-			<label for="volunteer">Volunteer Resources</label>
-		</nav> -->
+		
 		
 	</header><!-- .masthead -->
 
 	<main id="content" class="main-area">
+		<!--
 		<div class="alert">
 			<h2>Attention:</h2>
 			<p>This site provides community aggregated links to resources and <strong>is not an official resource itself</strong>. Please follow the links to original sources.</p>
 			<p>Current focus of Community Fire Tracker is on California fires.</p>
-		</div><!-- .alert -->
+		</div>--><!-- .alert -->
+
 		<h2 class="main-title">Lists of resources:</h2>
 		<section class="resource-list">
 			<ul>
@@ -77,15 +77,32 @@
 	</main><!-- .main-area -->
 
 	<footer class="footer">
-		<!--<section class="footer-widgets">
-			<h4 class="widget-title">Site navigation:</h4>
-			<ul class="footer-nav">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="resources.html">Resources</a></li>
-				<li><a href="contribute.html">Contact</a></li>
-				<li><a href="about.html">About</a></li>
-			</ul>
-		</section>--><!-- .footer-widgets -->
+		<div class="widget contact">
+			<p>Contact: <a href="mailto:communityfiretracker@gmail.com">communityfiretracker@gmail.com</a></p>
+			<hr>
+		</div>
+		<div class="widget">
+			<h3>Disclaimer</h3>
+			<small>Last updated: December 07, 2017</small>
+			<p>The information contained on http://communityfiretracker.com website (the "Service") is for general information purpose only.</p>
+			<p>Community Fire Tracker assumes no responsibility for errors or omissions in the contents on the Service.</p>
+			<p>In no event shall Community Fire Tracker be liable for any special, direct, indirect, consequential, or incidental damages or any damages whatsoever, whether in an action of contract, negligence or other tort, arising out of or in connection with the use of the Service or the contents of the Service. Community Fire Tracker reserves the right to make additions, deletions, or modification to the contents on the Service at any time without prior notice.</p>
+			<p>Community Fire Tracker does not warrant that the website is free of viruses or other harmful components.</p>
+			<p><a href="https://termsfeed.com/disclaimer/f115a25c9f3630907bb56507aeb91b9d">Disclaimer from TermsFeed for Community Fire Tracker</a>.</p>
+			<hr>
+		</div>
+		<div class="widget">
+			<h3>External links disclaimer</h3>
+			<p>http://communityfiretracker.com website may contain links to external websites that are not provided or maintained by or in any way affiliated with Community Fire Tracker.</p>
+			<p>Please note that the Community Fire Tracker does not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites.</p>
+			<hr>
+		</div>
+		
+		<div class="widget">
+			<h3>About</h3>
+			<p>The Community Fire Tracker is an effort by members of the community to collect and share relevant online resources related to fire events. This site is not an official channel of communication.</p>
+			<p>If you are experiencing an emergency, please dial 911 for immediate assistance.</p>
+		</div>
 	</footer><!-- .footer -->
 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110874193-1"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-110874193-1'); </script>
