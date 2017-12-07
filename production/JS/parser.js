@@ -81,6 +81,8 @@ function buildCards(data) {
 	}
 }
 
+// Parse CSV to JSON.
+// Uses PapaParse http://papaparse.com/
 Papa.parse(DATA, {
 	download: true,
 	header: true,
