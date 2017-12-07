@@ -6,9 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Community Fire Tracker</title>
 	<link rel="stylesheet" href="style-main.css" type="text/css" media="all">
-	<link rel="stylesheet" href="CSS/header.css" type="text/css" media="all">
-	<link rel="stylesheet" href="CSS/main.css" type="text/css" media="all">
-	<link rel="stylesheet" href="CSS/footer.css" type="text/css" media="all">    
 
 	<script src="JS/libs/papaparse.min.js" defer></script>
 	<script src="JS/parser.js" defer></script>
@@ -21,42 +18,46 @@
 		<div class="site-branding">
 			<h1 class="site-title"><a href="/">Community Fire Tracker</a></h1>
 		</div><!-- .site-title -->
-		<nav class="filter">
+		<nav class="filter location">
 			<h2 class="filter-heading">Filter by fire:</h2>
-			<input type="checkbox" id="all" name="all" value="all">
-			<label for="all">All fires</label>
-			<input type="checkbox" id="thomas" name="thomas" value="thomas">
-			<label for="thomas">Thomas Fire (Ventura)</label>
-			<input type="checkbox" id="creek" name="creek" value="creek">
-			<label for="creek">Creek Fire (Los Angeles)</label>
-			<input type="checkbox" id="rye" name="rye" value="rye">
-			<label for="rye">Rye Fire (Los Angeles)</label>
-			<input type="checkbox" id="little" name="little" value="littlemountain">
-			<label for="little">Little Mountain Fire (San Bernardino)</label>
-			<input type="checkbox" id="skirball" name="skirball" value="skirball">
-			<label for="skirball">Skirball Fire (Los Angeles)</label>
+			
+			<section>
+				<input type="radio" id="all" name="location" value="all" checked>
+					<label for="all">All fires</label>
+				<input type="radio" id="thomas" name="location" value="thomas" />
+					<label for="thomas">Thomas Fire (Ventura)</label>
+				<input type="radio" id="creek" name="location" value="creek" />
+					<label for="creek">Creek Fire (Los Angeles)</label>
+				<input type="radio" id="rye" name="location" value="rye" />
+					<label for="rye">Rye Fire (Los Angeles)</label>
+				<input type="radio" id="little" name="location" value="littlemountain" />
+					<label for="little">Little Mountain Fire (San Bernardino)</label>
+				<input type="radio" id="skirball" name="location" value="skirball" />
+					<label for="skirball">Skirball Fire (Los Angeles)</label>
+			</section>
+			
 		</nav>
-		<nav class="filter">
+		<!-- <nav class="filter">
 			<h2 class="filter-heading">Filter by information type:</h2>
-			<input type="checkbox" id="alltypes" name="alltypes" value="alltypes">
+			<input type="radio" id="alltypes" name="alltypes" value="alltypes">
 			<label for="alltypes">All</label>
-			<input type="checkbox" id="map" name="map" value="map">
+			<input type="radio" id="map" name="map" value="map">
 			<label for="map">Map</label>
-			<input type="checkbox" id="news" name="news" value="news">
+			<input type="radio" id="news" name="news" value="news">
 			<label for="news">News Stories</label>
-			<input type="checkbox" id="government" name="government" value="government">
+			<input type="radio" id="government" name="government" value="government">
 			<label for="government">Official Government Site</label>
-			<input type="checkbox" id="traffic" name="traffic" value="traffic">
+			<input type="radio" id="traffic" name="traffic" value="traffic">
 			<label for="traffic">Traffic and Transportation</label>
-			<input type="checkbox" id="webcams" name="webcams" value="webcams">
+			<input type="radio" id="webcams" name="webcams" value="webcams">
 			<label for="webcams">Webcams</label>
-			<input type="checkbox" id="twitter" name="twitter" value="twitter">
+			<input type="radio" id="twitter" name="twitter" value="twitter">
 			<label for="twitter">Twitter Feeds</label>
-			<input type="checkbox" id="mobile" name="mobile" value="mobile">
+			<input type="radio" id="mobile" name="mobile" value="mobile">
 			<label for="mobile">Mobile App</label>
-			<input type="checkbox" id="volunteer" name="volunteer" value="volunteer">
+			<input type="radio" id="volunteer" name="volunteer" value="volunteer">
 			<label for="volunteer">Volunteer Resources</label>
-		</nav>
+		</nav> -->
 		
 	</header><!-- .masthead -->
 
