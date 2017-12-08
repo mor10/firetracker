@@ -127,7 +127,7 @@ function buildCards(data) {
 		string += '<h4 class="name">' + data[i]['name'] + '</h4>';
 		string += '<div class="description">' + data[i]['description'] + '</div>';
 		string += '<div class="fire">Fire: <strong>' + data[i]['fire'] + '</strong></div>';
-		string += '<div class="type">Information type: <strong>' + data[i]['type'] + '</div>';
+		string += '<div class="type">Information type: <strong class="' + parseType(data[i]['type']) + '">' + data[i]['type'] + '</div>';
 		string += '</a>';
 		item.innerHTML = string;
 		MAIN.appendChild( item );

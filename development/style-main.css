@@ -248,11 +248,58 @@ Mobile-first menu
 }
 
 /*--------------------------------------------------------------
+highlight colors
+--------------------------------------------------------------*/
+.type strong {
+    padding: .2em .5em;
+    border-radius: 5px;
+    color: white;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px hsla(0, 0%, 0%, .6);
+}
+
+.map {
+    background-color: #558000;
+}
+
+.news {
+    background-color: #718da8;
+}
+
+.weather {
+    background-color: #ff7f00;
+}
+
+.government {
+    background-color: #ff007f;
+}
+
+.traffic {
+    background-color: #002a80;
+}
+
+.webcams {
+    background-color: #800d20;
+}
+
+.twitter {
+    background-color: #19b2ff ;
+}
+
+.mobile {
+    background-color: #d048e9;
+}
+
+.volunteer {
+    background-color: #00a870;
+}
+
+/*--------------------------------------------------------------
 Footer styles
 --------------------------------------------------------------*/
 
 .footer {
-    padding: 1em;
+    padding: 2em;
     background: hsl(0, 0%, 10%);
     color: $beige;
 }
