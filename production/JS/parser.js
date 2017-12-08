@@ -75,6 +75,12 @@ function parseLocation(data) {
 		case '#SkirballFire - Los Angeles, CA 201712':
 			return 'skirball ';
 			break;
+		case '#LibertyFire - Murrieta, CA 201712':
+			return 'liberty ';
+			break;
+		case '#LilacFire - San Diego, CA 201712':
+			return 'lilac ';
+			break;
 		default:
 			return 'other ';
 	}
