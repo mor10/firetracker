@@ -24,17 +24,14 @@ function runFilter(filters) {
 
 		if (filters.includes('all')) {
 			resources[i].classList.remove('hide')
-			console.log('all');
 		} else {
 			// Get current classes and create array from classList:
 			var classes = [].slice.apply(resources[i].classList);
 
 			if (classes.includes(filters.join())) {
 				resources[i].classList.remove('hide')
-				console.log('remove');
 			} else {
 				resources[i].classList.add('hide');
-				console.log('add');
 			}
 		}
 
